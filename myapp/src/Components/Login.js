@@ -7,11 +7,17 @@ const Login = () => {
     });
 
     const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]:e.target.value
+        })
 
     }
 
     const handleSubmit = () => {
-
+        if (!formData.username || !formData.password) {
+            
+        }
     }
   return (
     <div className='login'>
