@@ -1,4 +1,3 @@
-```markdown
 # Using React Router DOM 🚀
 
 This repository demonstrates how to build a simple React application with **React Router DOM** for navigation and routing. The application includes multiple pages such as `Home`, `About`, `Contact Us`, `Login`, and a protected `Dashboard` accessible only to authenticated users.
@@ -171,11 +170,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Enjoy coding! 🚀
-``` 
-
-### Notes:
-- Replace `your-username` with your actual GitHub username.
-- Add your name and LinkedIn profile in the **Author** section.
-- Replace the placeholder image URL in the **Demo** section with a screenshot or video of your app.
-
-This `README.md` is professional, attractive, and detailed, making it easy for others to understand and use your project.
