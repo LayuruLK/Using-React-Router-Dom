@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         username:'',
         password:''
@@ -16,19 +17,24 @@ const Login = () => {
 
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+
         if (!formData.username || !formData.password) {
             setError("Please Fill All Required Fields!")
+            return;
         }
 
         if (formData.username === 'admin' && formData.password === '123') {
-            Navigate('/dash');
+            navigate('/dash');
+        } else {
+            setError('Invalid username or password!'); 
         }
     }
   return (
     <div className='login'>
       <div className='login-form'>
-        <p>{error}</p>
+      {error && <p className="error">{error}</p>}
         <form onSubmit={handleSubmit}>
             <input
                 type='text'
