@@ -48,7 +48,7 @@ This repository demonstrates how to build a simple React application with **Reac
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/LayuruLK/Using-React-Router-Dom.git
-cd Using-React-Router-Dom
+cd myapp
 ```
 
 ### 2. Install Dependencies
